@@ -1,0 +1,72 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 600px;
+    margin: 0;
+    padding:5px;
+  }
+
+.a{
+    width: 33.3%;
+    height: 100%;
+    background-color: #00a650;
+    display: flex;
+}
+
+.b{
+    width: 33.3%;
+    height: 100%;
+    background-color:#fef200;
+    display: flex;
+}
+
+.c{
+    width: 33.3%;
+    height: 100%;
+    background-color:#ed1b24;
+    display: flex;
+}
+
+  /* Centered star */
+  .star-5-points {
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    transform: translate(-50%, -50%) rotateZ(35deg);
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 0;
+    border-bottom: 35px solid #00a650;
+  }
+  
+  /* Star points */
+  .star-5-points::before {
+    content: "";
+    position: absolute;
+    top: -22px;
+    left: -32px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top: 0;
+    border-bottom: 40px solid #00a650;
+    transform: rotateZ(-35deg);
+  }
+  
+  .star-5-points::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: -52px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 0;
+    border-bottom: 35px solid #00a650;
+    transform: rotateZ(-70deg);
+  }
+  
